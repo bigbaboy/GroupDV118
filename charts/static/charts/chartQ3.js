@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });document.addEventListener("DOMContentLoaded", function () {
     // Đọc dữ liệu từ file CSV
-    d3.csv("data_ggsheet.csv").then(data => {
+    d3.csv(csvDataUrl).then(data => {
         if (!data || data.length === 0) {
             console.error("Dữ liệu chưa được load hoặc rỗng!");
             return;
